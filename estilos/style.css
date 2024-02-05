@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: #0A004A;
+}
+
+nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+nav > ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+nav > ul > li {
+    padding: 20px;
+}
+
+div#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#logo > img{
+    width: 80px;
+    height: 80px;
+}
+
+
+div#logo > h1 {
+    padding: 10px;
+    font-weight: 300;
+    color: white;
+}
+
+section {  
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    top: 100px;
+}
+
+div#gar {
+        width: 50%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center
+}
+
+div#info {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 50%;
+    height: auto;
+    margin-top: 100px;
+    top: 100%;
+    margin-left: 20px;
+}
+
+div#info > h2 {
+    font-size: 60px;
+}
+
+div#info > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+div#botoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+button#mat {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 30px;
+    background-color: #0A004A;
+    color: white;
+    padding: 15px;
+    margin-right: 60px;
+}
+
+button#agen {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 30px;
+    background-color: white;
+    border: #0A004A solid 1px;
+    color: #0A004A;
+    padding: 15px;
+}
+
+
+div#gar > img {
+    width: 700px;
+}
+
+footer {
+    position: relative;
+    background-color: aqua;
+    bottom: 0;
+    margin-top: auto;
+    width: 100%;
+    height: 150px;
+}
