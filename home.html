@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECF</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <script src="estilos/script.js"></script>
+    <title>ECF</title>
 </head>
 <body>
     <header>
@@ -15,39 +16,74 @@
                 <h1>ECF</h1>
             </div>
 
-            <nav>
-               <ul>
+            <nav id="menu">
+               <ul id="menu">
                     <li> <a href="#"></a>Home</li>
                     <li> <a href="#"></a>Sobre Nós</li>
                     <li> <a href="#"></a>Contato</li>
                     <li> <a href="#"></a>Professores</li>
                     <li> <a href="#"></a>Turmas</li>
                 </ul>
-           </nav>
+            </nav>
+
     </header>
 
     <section>
-        <div id="info">
-            <h3>Nota 10 no MEC</h3>
-            <h2>ECF</h2>
-            <p>No coração pulsante da criação cinematográfica, surge a Escola Cinematográfica de Filmagens, conhecida carinhosamente como ECF. Nossa história começou em 2005, quando o cineasta visionário Cleber Site Silva transformou sua paixão por contar histórias em uma visão: criar um espaço único para cultivar talentos e transformar amantes do cinema em contadores de histórias extraordinários.
+            <div id="info">
+                <h3>Nota 10 no MEC</h3>
+                <h2>ECF</h2>
+                <p>No coração pulsante da criação cinematográfica, surge a Escola Cinematográfica de Filmagens, conhecida carinhosamente como ECF. Nossa história começou em 2005, quando o cineasta visionário Cleber Site Silva transformou sua paixão por contar histórias em uma visão: criar um espaço único para cultivar talentos e transformar amantes do cinema em contadores de histórias extraordinários.
                 
-            <div id="botoes">
-                <button id="mat">Matricule-se</button>
-                <button id="agen">Agende uma Visita</button>
+                <div id="botoes">
+                    <button id="mat">Matricule-se</button>
+                    <button id="agen">Agende uma Visita</button>
+                </div>
             </div>
-        </div>
 
-        <div id="gar">
-            <img src="images/gar.png" alt="garota">
-        </div>
+            <div id="gar">
+                <img src="images/gar.png" alt="garota">
+            </div>
     </section>
+    <div id="div_matricula">
+        <p>Matricule-se</p>
+        <form action="/matricular" method="post" id="form_mat">
+            <input type="text" placeholder="Nome Completo" name="nome">
+            <input type="text" placeholder="CPF" name="cpf">
+            <input type="text" placeholder="Data de nascimento">
+            <input type="email" placeholder="Email principal" name="email">
+            <input type="tel" placeholder="Telefone ou celular" name="telefone">
+            <input id="btn_sub_mat" type="submit" value="Matricular">
+        </form>
+        <button id="btn_sair_matricula">Sair</button>
+    </div>
+
+    <div id="div_agendamento">
+        <p>Agende uma visita</p>
+        <form action="" method="">
+            <input type="text" placeholder="Nome Completo">
+            <input type="text" placeholder="CPF">
+            <input type="email" placeholder="Email principal">
+            <input type="tel" placeholder="Telefone ou celular">
+            <input type="datetime" placeholder="Data">
+            <input id="btn_sub_age" type="submit" value="Agendar">
+        </form>
+        <button id="btn_sair_agendamento">Sair</button>
+    </div>
 
     <footer>
-        <ul>
-            <li>Instagram</li>
-            <li>Facebook</li>
-        </ul>
+        <nav id="rodape">
+            <ul>
+                <li><img src="images/email.webp" alt="" class="icon">Instagram</li>
+                <li><img src="images/email.webp" alt="" class="icon">Facebook</li>
+                <li><img src="images/email.webp" alt="" class="icon">Email</li>
+            </ul>
+        </nav>
+        <nav id="listadois">
+            <ul>
+                <li>CNPJ</li>
+                <li>Telefone</li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
