@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script defer src="/script.js"></script>
+    <title>ECF</title>
+</head>
+<body>
+    <header>
+
+        <div id="div_logo">
+            <img src="/assents/logo.png" alt="logo"> 
+            <h1>ECF</h1> 
+        </div>
+
+      
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre nós</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Professores</a></li>
+                <li><a href="">Turmas</a></li>
+            </ul>
+        </nav>
+      
+        
+    </header>
+
+    <section>
+        <div id="div_info">
+            <h3>Nota 10 no MEC</h3>
+            <h2>ECF</h2>
+            <p>No coração pulsante da criação cinematográfica, surge a Escola Cinematográfica de Filmagens, conhecida carinhosamente como ECF. Nossa história começou em 2005, quando o cineasta visionário Cleber Site Silva transformou sua paixão por contar histórias em uma visão: criar um espaço único para cultivar talentos e transformar amantes do cinema em contadores de histórias extraordinários...</p>
+
+            <button id="btn_mat">Matricule-se</button>
+            <button id="btn_agen">Excluir Matrícula</button>
+        </div>
+        <div id="div_foto">
+            <img src="/images/gar.png" alt="Estudante com Caderno">
+        </div>
+
+    </section>
+
+    <div id="div_matricula">
+        <p>Matricule-se</p>
+
+        <form action="/criar" method="post" id="form_mat">
+            <input type="text" placeholder="Nome Completo" name="nome_m">
+            <input type="text" placeholder="CPF" name="cpf_m">
+            <input type="text" placeholder="Data de nascimento" name="dn_m">
+            <input type="email" placeholder="Email principal" name="email_m">
+            <input type="tel" placeholder="Telefone ou celular" name="telefone_m">
+            <input id="btn_sub_mat" type="submit" value="Matricular">
+        </form>
+        <button id="btn_sair_matricula">Sair</button>
+    </div>
+
+
+    <div id="div_agendamento">
+        <p>Excluir Matrícula</p>
+        <form action="/excluir" method="get">
+            <input type="number" placeholder="Insira o ID" name="id_e">
+            <input id="btn_sub_age" type="submit" value="Excluir">
+        </form>
+        <button id="btn_sair_agendamento">Sair</button>
+    </div>
+</body>
+</html>
